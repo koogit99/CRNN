@@ -6,16 +6,15 @@ python preprocess_audio.py
 ```
 
 Training:
-# train.py 실행 시 crn.py line 210, x = x.permute(0,1,3,2) 주석처리
 
 ```
+
 python train.py -C config/train/baseline_model.json5
 
 python train.py -C config/train/crn_baseline.json5
 ```
 
 Inference:
-# inference.py 실행 시 crn.py line 210, x = x.permute(0,1,3,2) 주석처리 제거
 
 ```
 python inference.py -C config\inference\basic.json5 -cp Experiments\CRN\baseline_model\checkpoints\latest_model.tar -dist enhanced
