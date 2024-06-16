@@ -26,8 +26,8 @@ python inference.py -C config\inference\basic.json5 -cp Experiments\CRN\crn_base
 
 ## Environments
 
-# platform: win-64
-# conda
+- platform: win-64
+- conda
 
 - python=3.9.0
 - pytorch=2.3.1
